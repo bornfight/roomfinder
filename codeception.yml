@@ -1,0 +1,13 @@
+namespace: degordian\roomfinder\tests
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+actor_suffix: Tester
+settings:
+    bootstrap: bootstrap.php
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
