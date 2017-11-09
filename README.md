@@ -5,7 +5,7 @@ A php wrapper around something that can handle rooms and their availability(goog
 
 # How to install (Composer)
 
-    composer require "degordian/roomfinder":"dev-master"
+    composer require degordian/roomfinder
     
 or add to your project's composer.json
 
