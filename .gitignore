@@ -1,0 +1,12 @@
+tests/_output/*
+vendor
+composer.lock
+myexample.php
+.DS_Store
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+

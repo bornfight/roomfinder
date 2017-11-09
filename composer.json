@@ -1,0 +1,24 @@
+{
+    "name": "degordian/roomfinder",
+    "type": "library",
+    "version": "1.0",
+    "description": "Finding available meeting rooms, and reserving them",
+    "keywords": ["calendar", "rooms", "reservations", "meetings"],
+    "require": {
+        "php": ">=7.0.0",
+        "google/apiclient": "^2.2"
+    },
+    "authors": [
+        {
+            "name": "Tony Mrakovcic",
+            "email": "tony.mrakovcic@degordian.com",
+            "role": "developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "degordian\\roomfinder": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
