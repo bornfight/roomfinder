@@ -296,4 +296,27 @@ class RoomCollectionTest extends \Codeception\Test\Unit
         }
         $this->assertSame($expected, $result);
     }
+
+    public function testGetRooms_WhenElementsHaveBeenUnset()
+    {
+        $room1 = new Room();
+        $room1->setId(1);
+
+        $room2 = new Room();
+        $room2->setId(2);
+
+        $room3 = new Room();
+        $room3->setId(3);
+
+        $this->roomCollection->addRoom($room1);
+        $this->roomCollection->addRoom($room2);
+        $this->roomCollection->addRoom($room3);
+
+        $this->roomCollection->offsetUnset(1);
+
+        $expected = [$room1, $room3];
+        $result = $this->roomCollection->getRooms();
+
+        $this->assertSame($expected, $result);
+    }
 }
