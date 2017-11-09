@@ -1,7 +1,7 @@
 {
     "name": "degordian/roomfinder",
     "type": "library",
-    "licence": "MIT",
+    "license": "MIT",
     "description": "Finding available meeting rooms, and reserving them",
     "keywords": ["calendar", "rooms", "reservations", "meetings"],
     "require": {
