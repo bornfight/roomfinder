@@ -16,8 +16,8 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "degordian\\roomfinder": "src"
+        "psr-4": {
+            "degordian2\\roomfinder\\": "src/"
         }
     },
     "minimum-stability": "dev"

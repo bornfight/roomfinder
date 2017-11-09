@@ -1,8 +1,8 @@
 <?php
 
-namespace degordian\RoomFinder;
+namespace degordian\roomfinder;
 
-use degordian\RoomFinder\Adapters\RoomResourceAdapterInterface;
+use degordian\roomfinder\Adapters\RoomResourceAdapterInterface;
 
 /**
  * Class RoomHandler

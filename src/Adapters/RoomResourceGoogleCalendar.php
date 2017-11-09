@@ -1,6 +1,6 @@
 <?php
 
-namespace degordian\RoomFinder\Adapters;
+namespace degordian\roomfinder\Adapters;
 
 use degordian\RoomFinder\RoomCollection;
 use degordian\RoomFinder\Room;
