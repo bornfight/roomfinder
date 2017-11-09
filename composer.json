@@ -2,7 +2,6 @@
     "name": "degordian/roomfinder",
     "type": "library",
     "licence": "MIT",
-    "version": "1.0.1",
     "description": "Finding available meeting rooms, and reserving them",
     "keywords": ["calendar", "rooms", "reservations", "meetings"],
     "require": {
@@ -18,8 +17,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "degordian2\\roomfinder\\": "src/"
+            "degordian\\roomfinder\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }

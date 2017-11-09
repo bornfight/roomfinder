@@ -13,10 +13,10 @@ interface RoomResourceAdapterInterface
     const DEFAULT_MEET_LENGTH = 30 * 60;
     const DEFAULT_SUMMARY = 'Meet';
 
-    function getService();
-    function getAllRoomsAvailability();
-    function setTimeFrame($from, $to);
-    function setRoomCollection(RoomCollection $rooms);
-    function getRoomCollection();
-    function reserveRoom($room, $length = self::DEFAULT_MEET_LENGTH, $summary = self::DEFAULT_SUMMARY);
+    public function getService();
+    public function getAllRoomsAvailability();
+    public function setTimeFrame($from, $to);
+    public function setRoomCollection(RoomCollection $rooms);
+    public function getRoomCollection();
+    public function reserveRoom($room, $length = self::DEFAULT_MEET_LENGTH, $summary = self::DEFAULT_SUMMARY);
 }
