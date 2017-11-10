@@ -1,6 +1,6 @@
 <?php
 
-namespace degordian\RoomFinder;
+namespace degordian\roomfinder;
 
 /**
  * Class Room
