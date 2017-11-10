@@ -2,9 +2,9 @@
 
 include '../vendor/autoload.php';
 
-use degordian\RoomFinder\Room;
-use degordian\RoomFinder\RoomHandler;
-use degordian\RoomFinder\Adapters\RoomResourceGoogleCalendar;
+use degordian\roomfinder\Room;
+use degordian\roomfinder\RoomHandler;
+use degordian\roomfinder\Adapters\RoomResourceGoogleCalendar;
 
 $meetingRooms = [
     [

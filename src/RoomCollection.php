@@ -4,7 +4,7 @@ namespace degordian\roomfinder;
 
 /**
  * Class RoomCollection
- * @package degordian\RoomFinder
+ * @package degordian\roomfinder
  */
 class RoomCollection implements \Iterator, \ArrayAccess
 {

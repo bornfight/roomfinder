@@ -10,7 +10,7 @@
 
 include '../vendor/autoload.php';
 
-use degordian\RoomFinder\Adapters\RoomResourceGoogleCalendar;
+use degordian\roomfinder\Adapters\RoomResourceGoogleCalendar;
 
 /**
  * Edit paths to credentials

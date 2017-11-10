@@ -6,7 +6,7 @@ use degordian\roomfinder\RoomCollection;
 
 /**
  * Interface RoomResourceAdapterInterface
- * @package degordian\RoomFinder\Adapters
+ * @package degordian\roomfinder\Adapters
  */
 interface RoomResourceAdapterInterface
 {
