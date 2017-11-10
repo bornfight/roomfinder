@@ -2,8 +2,8 @@
 
 namespace degordian\roomfinder\Adapters;
 
-use degordian\RoomFinder\RoomCollection;
-use degordian\RoomFinder\Room;
+use degordian\roomfinder\RoomCollection;
+use degordian\roomfinder\Room;
 
 /**
  * Class RoomResourceGoogleCalendar

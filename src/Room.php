@@ -4,7 +4,7 @@ namespace degordian\roomfinder;
 
 /**
  * Class Room
- * @package degordian\RoomFinder
+ * @package degordian\roomfinder
  */
 class Room
 {
