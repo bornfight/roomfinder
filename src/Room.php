@@ -125,7 +125,9 @@ class Room
         foreach ($this->busy as $busyInfo) {
             $busyFrom = strtotime($busyInfo['start']);
             $busyTo = strtotime($busyInfo['end']);
-            if ($busyFrom < $busyTime && $busyTo > $busyTime) {
+            if (($busyFrom < $busyTime && $busyTo > $busyTime)
+                || ($now < $busyTo && $busyTime > $busyTo)
+            ) {
                 return true;
             }
         }
