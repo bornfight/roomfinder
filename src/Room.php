@@ -101,6 +101,14 @@ class Room
         return $this;
     }
 
+    /*
+     *
+     */
+    public function getBusyTime()
+    {
+        return $this->busy;
+    }
+
     /**
      * @param int $addTime
      * @return bool
