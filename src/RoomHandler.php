@@ -141,7 +141,7 @@ class RoomHandler
     {
         $filtered = [];
 
-        foreach ($rooms as $room) {
+        foreach ((array)$rooms as $room) {
             $methodName = 'is' . ucfirst($size);
             if (method_exists($room, $methodName)) {
                 if ($room->$methodName()) {
@@ -187,6 +187,8 @@ class RoomHandler
      * @param $length
      * @return $this
      */
+
+
     public function setNeededMeetingLength($length)
     {
         $this->neededMeetingLength = $length;
@@ -195,10 +197,12 @@ class RoomHandler
 
     /**
      * @param Room $room
+     * @param null $length
+     * @param null $summary
      * @return $this
      */
-    public function reserveRoom($room)
+    public function reserveRoom($room, $length = null, $summary = null)
     {
-        return $this->getRoomResourceAdapter()->reserveRoom($room);
+        return $this->getRoomResourceAdapter()->reserveRoom($room, $length, $summary);
     }
 }
