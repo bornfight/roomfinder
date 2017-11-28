@@ -12,6 +12,7 @@ use degordian\roomfinder\Room;
 class RoomResourceGoogleCalendar implements RoomResourceAdapterInterface
 {
     const DEFAULT_TIME_ZONE = 'Europe/Zagreb';
+    const ACCEPTED = 'accepted';
 
     private $config = [];
 
@@ -362,11 +363,18 @@ class RoomResourceGoogleCalendar implements RoomResourceAdapterInterface
                 'timeZone' =>  $this->getTimeZone(),
             ],
             'attendees' => [
-                ['email' => $this->getUserPrimaryCalendarId()],
+                [
+                    'email' => $room->getId(),
+                    'resource' => true,
+                ],
+                [
+                    'email' => $this->getUserPrimaryCalendarId(),
+                    'responseStatus' => self::ACCEPTED
+                ],
             ]
         ]);
 
-        $event = $this->getService()->events->insert($room->getId(), $event);
+        $event = $this->getService()->events->insert($this->getUserPrimaryCalendarId(), $event);
         return $event;
     }
 }
